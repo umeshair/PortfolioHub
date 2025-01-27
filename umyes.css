@@ -259,3 +259,16 @@ header {
     color: #0073e6; /* Change color on hover */
 }
 
+.name-by {
+    height: 50px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.name-by p {
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: #000;
+}
