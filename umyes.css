@@ -62,6 +62,8 @@ header {
         width: calc(100% + 1.3px);
         height: 21px;
     }
+
+
 }
 
 @media (min-width: 200px) and (max-width: 768px) {
@@ -73,6 +75,21 @@ header {
         display: none;
     }
 
+    .container {
+        display: flex;
+        flex-direction: column;
+        background-color: transparent;
+        height: 820px;
+        width: 100%;
+        margin-top: 24px;
+    }
+
+    .intro-panel {
+        height: 60%;
+        width: 400px;
+        border-radius: 14px;
+        background-color: #b6cace;
+    }
 }
 
 @media (max-width: 270px) {
@@ -196,7 +213,7 @@ header {
     height: 90%;
     width: 20%;
     border-radius: 14px;
-    background-color: #d3e3e6;
+    background-color: #b6cace;
 }
 
 .profile-pic {
@@ -220,7 +237,7 @@ header {
 .intro-right-panel {
     height: 90%;
     width: 64%;
-    background-color: aquamarine;
+    background-color: transparent;
     border-radius: 12px;
 }
 
@@ -280,3 +297,17 @@ p {
     font-weight: 700;
     color: #000;
 }
+
+.me-in-text p {
+    line-height: 1.6;
+    margin: 0px 8px;
+    font-size: 18px;
+    line-height: 1.6;
+    hyphens: auto;
+  }
+
+  .intro-right-panel h3 {
+    font-size: 2rem;
+    font-weight: 600;
+    margin: 6px 8px;
+  }
