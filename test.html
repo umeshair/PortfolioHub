@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modern Navigation Bar</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', sans-serif;
+        }
+
+        body {
+            background: #ffffff;
+            min-height: 100vh;
+        }
+
+        .nav-container {
+            position: relative;
+            width: 36%;
+            min-width: 500px;
+            height: 60px;
+            background: rgba(255, 255, 255, 0.9);
+            border-radius: 25px;
+            margin: 30px auto 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            border: 1px solid rgba(0, 0, 0, 0.1);
+            backdrop-filter: blur(10px);
+            animation: fadeIn 1s ease-in;
+            transition: all 0.3s ease;
+        }
+
+        .nav-menu {
+            display: flex;
+            width: 100%;
+            justify-content: space-around;
+            list-style: none;
+            position: relative;
+            padding: 0 20px;
+        }
+
+        .nav-item {
+            position: relative;
+        }
+
+        .nav-link {
+            text-decoration: none;
+            color: #000000;
+            font-weight: 500;
+            padding: 10px 15px;
+            transition: all 0.3s ease;
+            border-radius: 15px;
+        }
+
+        .nav-link:hover {
+            color: #0066ff;
+            transform: translateY(-2px);
+            background: rgba(0, 102, 255, 0.1);
+        }
+
+        .active {
+            color: #0066ff !important;
+            font-weight: 600;
+        }
+
+        @media (max-width: 500px) {
+            .nav-container {
+                width: 100% !important;
+                min-width: unset;
+                border-radius: 0;
+                margin-top: 0;
+                box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            }
+            
+            .nav-link {
+                padding: 8px 10px;
+                font-size: 14px;
+            }
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav class="nav-container">
+        <ul class="nav-menu">
+            <li class="nav-item">
+                <a href="#" class="nav-link active">Home</a>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="nav-link">Gallery</a>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="nav-link">Blog</a>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="nav-link">Contact</a>
+            </li>
+        </ul>
+    </nav>
+
+    <script>
+        const navLinks = document.querySelectorAll('.nav-link');
+
+        // Update active state
+        navLinks.forEach(link => {
+            link.addEventListener('click', (e) => {
+                // Remove active class from all links
+                navLinks.forEach(l => l.classList.remove('active'));
+                // Add active class to clicked link
+                e.target.classList.add('active');
+            });
+        });
+    </script>
+</body>
+</html>

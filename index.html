@@ -19,35 +19,73 @@
     <link rel="stylesheet" href="assets/css/sections/contact.css">
     
     <!-- Favicon -->
-    <link rel="icon" type="image/png" href="assets/images/logos/favicon.png">
+    <link rel="icon" type="image/png" href="assets/images/f10-photo.jpg">
     
     <!-- PWA Manifest -->
     <link rel="manifest" href="manifest.webmanifest">
 </head>
-
 <body>
-    <!-- Navigation -->
-    <div id="navbar-container"></div>
-
-    <!-- Page Sections -->
-    <main>
-        <section id="home" class="section" name="home">
-            <!-- Home content -->
+        <!-- Navigation -->
+        <nav class="nav-container">
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="#home" class="nav-link active">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#gallery" class="nav-link">Gallery</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#blog" class="nav-link">Blog</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#contact" class="nav-link">Contact</a>
+                </li>
+            </ul>
+        </nav>
+    
+        <!-- Page Sections -->
+        <section id="home" class="home-section">
+            <div class="home-content">
+                <div class="home-image">
+                    <!-- Replace with your actual photo -->
+                    <img src="assets/images/f6-photo.jpg" alt="Jagdish Ayer">
+                </div>
+                
+                <div class="home-text">
+                    <h1>Jagdish Ayer</h1>
+                    <div class="subtitle">Journalist & Youth Leader</div>
+                    <p>
+                        Dedicated Nepali journalist and political analyst with a passion for youth empowerment 
+                        and democratic leadership. Regular contributor to Nepal Live Today, focusing on 
+                        political discourse and youth engagement in modern governance. Featured in the 
+                        "Generation Democracy" series advocating for young leaders' participation in 
+                        national development.
+                    </p>
+                    <a href="#contact" class="cta-button">Get in Touch</a>
+                </div>
+            </div>
         </section>
-
-        <section id="gallery" class="section" name="gallery">
-            <!-- Gallery content -->
+    
+        <section id="gallery" class="gallery-section">
+            <button class="gallery-nav prev">←</button>
+            <button class="gallery-nav next">→</button>
+            
+            <div class="gallery-container" id="galleryContainer">
+                <!-- Generated gallery items will be inserted here -->
+            </div>
         </section>
-
-        <section id="blog" class="section" name="blog">
+    
+        <section id="blog">
+            <h2>Blog</h2>
             <!-- Blog content -->
         </section>
-
-        <section id="contact" class="section" name="contact">
+    
+        <section id="contact">
+            <h2>Contact</h2>
             <!-- Contact content -->
         </section>
-    </main>
-
+    
+  
     <!-- Footer -->
     <div id="footer-container"></div>
 

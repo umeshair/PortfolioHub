@@ -1,25 +1,35 @@
-document.addEventListener('DOMContentLoaded', function() {
-    // Load navbar
-    fetch('includes/navbar.html')
-        .then(response => response.text())
-        .then(data => {
-            document.getElementById('navbar-container').innerHTML = data;
-            setActiveNavigation();
+const navLinks = document.querySelectorAll('.nav-link');
+const sections = document.querySelectorAll('section');
+
+// Smooth scroll and active state management
+navLinks.forEach(link => {
+    link.addEventListener('click', (e) => {
+        e.preventDefault();
+        const target = document.querySelector(link.getAttribute('href'));
+        
+        // Smooth scroll
+        target.scrollIntoView({
+            behavior: 'smooth',
+            block: 'start'
         });
 
-    // Load footer
-    fetch('includes/footer.html')
-        .then(response => response.text())
-        .then(data => {
-            document.getElementById('footer-container').innerHTML = data;
-        });
-
-    function setActiveNavigation() {
-        const links = document.querySelectorAll('.nav-link');
-        links.forEach(link => {
-            if(link.href === window.location.href + link.getAttribute('href')) {
-                link.classList.add('active');
-            }
-        });
-    }
+        // Update active class
+        navLinks.forEach(l => l.classList.remove('active'));
+        link.classList.add('active');
+    });
 });
+
+// Intersection Observer for active state
+const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            const id = entry.target.getAttribute('id');
+            navLinks.forEach(link => {
+                link.classList.toggle('active', 
+                    link.getAttribute('href') === `#${id}`);
+            });
+        }
+    });
+}, { threshold: 0.5 });
+
+sections.forEach(section => observer.observe(section));

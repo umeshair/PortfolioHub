@@ -1,0 +1,104 @@
+        /* Gallery Section */
+        .gallery-section {
+            padding: 4rem 0;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .gallery-container {
+            display: flex;
+            scroll-snap-type: x mandatory;
+            overflow-x: auto;
+            scroll-behavior: smooth;
+            -webkit-overflow-scrolling: touch;
+            padding: 0 2rem;
+            gap: 1.5rem;
+        }
+
+        .gallery-container::-webkit-scrollbar {
+            display: none;
+        }
+
+        .gallery-item {
+            scroll-snap-align: start;
+            flex: 0 0 calc(80% - 1rem);
+            position: relative;
+            aspect-ratio: 4/5;
+            border-radius: 15px;
+            overflow: hidden;
+            transition: transform 0.3s ease;
+        }
+
+        .gallery-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.3s ease;
+        }
+
+        .gallery-item:hover img {
+            transform: scale(1.05);
+        }
+
+        /* Navigation Arrows */
+        .gallery-nav {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            background: rgba(255, 255, 255, 0.9);
+            border: none;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            z-index: 10;
+            transition: all 0.3s ease;
+        }
+
+        .gallery-nav:hover {
+            background: #fff;
+            transform: translateY(-50%) scale(1.1);
+        }
+
+        .gallery-nav.prev {
+            left: 1rem;
+        }
+
+        .gallery-nav.next {
+            right: 1rem;
+        }
+
+        /* Responsive Design */
+        @media (min-width: 768px) {
+            .gallery-item {
+                flex: 0 0 calc(33.33% - 2rem);
+            }
+        }
+
+        @media (min-width: 1024px) {
+            .gallery-item {
+                flex: 0 0 calc(25% - 2rem);
+            }
+        }
+/* Adjust these values in the CSS */
+.gallery-item {
+    flex: 0 0 calc(80% - 1rem); /* Mobile card width */
+    aspect-ratio: 4/5; /* Maintain 4:5 ratio */
+    border-radius: 15px; /* Corner rounding */
+}
+
+@media (min-width: 768px) {
+    .gallery-item {
+        flex: 0 0 calc(33.33% - 2rem); /* Tablet cards */
+    }
+}
+
+@media (min-width: 1024px) {
+    .gallery-item {
+        flex: 0 0 calc(25% - 2rem); /* Desktop cards */
+    }
+}
