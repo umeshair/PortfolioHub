@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Jagdish Ayer - Journalist & Youth Leader">
+    <meta name="keywords" content="Nepal, Journalism, Youth Leadership, Politics">
+    <meta name="author" content="Jagdish Ayer">
+    <meta name="theme-color" content="#0A1F3D">
+    
+    <title>Jagdish Ayer - Journalist & Youth Leader</title>
+    
+    <!-- CSS Links -->
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/css/navbar.css">
+    <link rel="stylesheet" href="assets/css/sections/home.css">
+    <link rel="stylesheet" href="assets/css/sections/gallery.css">
+    <link rel="stylesheet" href="assets/css/sections/blog.css">
+    <link rel="stylesheet" href="assets/css/sections/contact.css">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="assets/images/logos/favicon.png">
+    
+    <!-- PWA Manifest -->
+    <link rel="manifest" href="manifest.webmanifest">
+</head>
+
+<body>
+    <!-- Navigation -->
+    <div id="navbar-container"></div>
+
+    <!-- Page Sections -->
+    <main>
+        <section id="home" class="section" name="home">
+            <!-- Home content -->
+        </section>
+
+        <section id="gallery" class="section" name="gallery">
+            <!-- Gallery content -->
+        </section>
+
+        <section id="blog" class="section" name="blog">
+            <!-- Blog content -->
+        </section>
+
+        <section id="contact" class="section" name="contact">
+            <!-- Contact content -->
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <div id="footer-container"></div>
+
+    <!-- JavaScript Files -->
+    <script src="assets/js/navbar.js" defer></script>
+    <script src="assets/js/main.js" defer></script>
+    <script src="assets/js/sections/home.js" defer></script>
+    <script src="assets/js/sections/gallery.js" defer></script>
+    <script src="assets/js/sections/blog.js" defer></script>
+    <script src="assets/js/sections/contact.js" defer></script>
+
+    <!-- No-Jekyll File -->
+    <script>
+        // Create .nojekyll file for GitHub Pages
+        if(window.location.hostname === 'github.io') {
+            const noJekyll = document.createElement('div');
+            noJekyll.style.display = 'none';
+            noJekyll.className = 'nojekyll';
+            document.body.appendChild(noJekyll);
+        }
+    </script>
+</body>
+</html>
