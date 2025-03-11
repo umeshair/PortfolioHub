@@ -4,7 +4,7 @@
 .nav-container {
     position: fixed;
     width: 36%;
-    min-width: 500px;
+    min-width: 700px;
     height: 60px;
     background: rgba(255, 255, 255, 0.9);
     border-radius: 25px;
