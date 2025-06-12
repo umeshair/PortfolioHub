@@ -1,0 +1,9 @@
+# Allow all web crawlers
+User-agent: *
+Allow: /
+
+# Sitemap location
+Sitemap: https://jagdishkumarayer.com.np/sitemap.xml
+
+# Disallow specific directories if needed
+# Disallow: /private/

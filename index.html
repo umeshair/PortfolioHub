@@ -3,249 +3,355 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Jagdish Ayer - Journalist & Youth Leader">
-    <meta name="keywords" content="Nepal, Journalism, Youth Leadership, Politics">
+    <meta name="description" content="Jagdish Ayer - Journalist, Activist & Youth Leader from Nepal dedicated to empowering young people and strengthening democratic participation">
+    <meta name="keywords" content="Nepal, Journalism, Youth Leadership, Politics, Democracy, Human Rights, SDGs, Gender Equality, SRHR, Peacebuilding">
     <meta name="author" content="Jagdish Ayer">
-    <meta name="theme-color" content="#0A1F3D">
+    <meta name="theme-color" content="#2A6EBB">
     
-    <title>Jagdish Ayer - Youth Leader</title>
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://jagdishkumarayer.com.np/">
+    <meta property="og:title" content="Jagdish Ayer - Youth Leader">
+    <meta property="og:description" content="A passionate youth leader and activist dedicated to empowering young people to create positive change in their communities.">
+    <meta property="og:image" content="https://jagdishkumarayer.com.np/assets/images/Jagadish.jpg">
     
-    <!-- CSS Links -->
-    <link rel="stylesheet" href="assets/css/main.css">
-    <link rel="stylesheet" href="assets/css/navbar.css">
-    <link rel="stylesheet" href="assets/css/sections/home.css">
-    <link rel="stylesheet" href="assets/css/sections/gallery.css">
-    <link rel="stylesheet" href="assets/css/sections/blog.css">
-    <link rel="stylesheet" href="assets/css/sections/contact.css">
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://jagdishkumarayer.com.np/">
+    <meta property="twitter:title" content="Jagdish Ayer - Youth Leader">
+    <meta property="twitter:description" content="A passionate youth leader and activist dedicated to empowering young people to create positive change in their communities.">
+    <meta property="twitter:image" content="https://jagdishkumarayer.com.np/assets/images/Jagadish.jpg">
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://jagdishkumarayer.com.np/">
+    
+    <title>Jagdish Ayer - Youth Leader & Activist | Nepal</title>
+    
+    <!-- CSS Links - Consolidated into one file -->
+    <link rel="stylesheet" href="assets/css/styles.css">
+    
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     
     <!-- Favicon -->
-    <link rel="icon" type="image/png" href="assets/images/f10-photo.jpg">
+    <link rel="icon" type="image/png" href="assets/images/icons.png">
     
     <!-- PWA Manifest -->
     <link rel="manifest" href="manifest.webmanifest">
+    
+    <!-- Preload critical assets -->
+    <link rel="preload" href="assets/images/Jagadish.jpg" as="image">
+    <link rel="preload" href="assets/css/styles.css" as="style">
+    <link rel="preload" href="assets/js/app.js" as="script">
 </head>
 <body>
-        <!-- Navigation -->
-        <nav class="nav-container">
-            <ul class="nav-menu">
-                <li class="nav-item">
-                    <a href="#home" class="nav-link active">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#gallery" class="nav-link">Gallery</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#blog" class="nav-link">Blog</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#contact" class="nav-link">Contact</a>
-                </li>
-            </ul>
-        </nav>
+    <!-- Skip to content link for accessibility -->
+    <a href="#home" class="skip-link">Skip to content</a>
 
-        <div class="social-media">
-            <div class="link-media"></div>
-        </div>
-    
-        <!-- Page Sections -->
-        <section id="home" class="home-section">
-            <div class="home-content">
-                <div class="home-image">
-                    <!-- Replace with your actual photo -->
-                    <img src="assets/images/Jagadish.jpg" alt="Jagdish Ayer">
-                </div>
-                
-                <div class="home-text">
-                    <h1>Jagdish Ayer</h1>
-                    <div class="subtitle"> Youth Leader</div>
-                    <p>
-                        A passionate youth leader and activist dedicated to empowering young people to create positive change in their communities.
-                        <br><br>With over 15 years of dedicated leadership in Nepal’s youth and civil society sectors, I have spearheaded impactful initiatives to empower young people, advance social justice, and strengthen democratic participation. My work spans capacity-building programs, advocacy campaigns, and grassroots recovery efforts, reaching thousands through trainings, lectures, and articles on critical themes like Human Rights, Leadership, SDGs, Gender Equality, SRHR, and Peacebuilding.
-                    </p>
-                    <a href="#contact" class="cta-button">Get in Touch</a>
-                </div>
-            </div>
-        </section>
-    
-        <section id="gallery"  class="gallery-section">
-            <button class="gallery-nav prev">←</button>
-            <button class="gallery-nav next">→</button>
-            
-            <div class="gallery-container" id="galleryContainer">
-                <!-- Generated gallery items will be inserted here -->
-            </div>
-        </section>
-    
     <!-- Navigation -->
+    <nav class="nav-container">
+        <button class="mobile-nav-toggle" aria-label="Toggle navigation menu">
+            <i class="fas fa-bars"></i>
+        </button>
+        <ul class="nav-menu">
+            <li class="nav-item">
+                <a href="#home" class="nav-link active">Home</a>
+            </li>
+            <li class="nav-item">
+                <a href="#gallery" class="nav-link">Gallery</a>
+            </li>
+            <li class="nav-item">
+                <a href="#blog" class="nav-link">Blog</a>
+            </li>
+            <li class="nav-item">
+                <a href="#contact" class="nav-link">Contact</a>
+            </li>
+        </ul>
+    </nav>
 
-    <section id="blog" class="blog-section">
-        <div class="blog-container">
-            <!-- Featured Article -->
-            <article class="featured-article">
-                <div class="article-header">
-                    <h2>Generation Democracy: A Youth Leadership Journey</h2>
-                    <div class="article-meta">
-                        <span>August 10, 2022</span>
-                        <span>Nepal Live Today</span>
-                        <span>8 min read</span>
+    <!-- Social Media Floating Bar -->
+    <div class="social-media-floating">
+        <a href="https://www.facebook.com/kumar.jagdish.5" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+            <i class="fab fa-facebook"></i>
+        </a>
+        <a href="#" target="_blank" rel="noopener noreferrer" aria-label="Twitter">
+            <i class="fab fa-twitter"></i>
+        </a>
+        <a href="#" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+            <i class="fab fa-linkedin"></i>
+        </a>
+    </div>
+    
+    <!-- Main Content -->
+    <main>
+        <!-- Home Section -->
+        <section id="home" class="home-section">
+            <div class="container">
+                <div class="home-content">
+                    <div class="home-image animate-on-scroll" data-animation="animate-fade-in">
+                        <img src="assets/images/Jagadish.jpg" alt="Jagdish Ayer - Youth Leader and Activist">
+                    </div>
+                    
+                    <div class="home-text">
+                        <h1 class="animate-on-scroll" data-animation="animate-slide-left">Jagdish Ayer</h1>
+                        <div class="subtitle animate-on-scroll" data-animation="animate-slide-right">Youth Leader & Activist</div>
+                        <p class="animate-on-scroll" data-animation="animate-fade-in" data-delay="delay-200">
+                            A passionate youth leader and activist dedicated to empowering young people to create positive change in their communities.
+                        </p>
+                        <p class="animate-on-scroll" data-animation="animate-fade-in" data-delay="delay-300">
+                            With over 15 years of dedicated leadership in Nepal's youth and civil society sectors, I have spearheaded impactful initiatives to empower young people, advance social justice, and strengthen democratic participation. My work spans capacity-building programs, advocacy campaigns, and grassroots recovery efforts, reaching thousands through trainings, lectures, and articles on critical themes like Human Rights, Leadership, SDGs, Gender Equality, SRHR, and Peacebuilding.
+                        </p>
+                        <a href="#contact" class="cta-button animate-on-scroll" data-animation="animate-fade-in" data-delay="delay-400">Get in Touch</a>
                     </div>
                 </div>
-
-                <div class="article-content">
-                    <p class="pull-quote">
-                        "Youth leadership is not about waiting for opportunities, 
-                        but creating them through persistent engagement and dialogue."
-                    </p>
-
-                    <p>In an exclusive interview with Nepal Live Today, Jagdish Ayer shares his vision for...</p>
-
-                    <h3>Key Initiatives</h3>
+            </div>
+        </section>
+    
+        <!-- Gallery Section - Will be populated by React -->
+        <section id="gallery" class="gallery-section">
+            <div class="container">
+                <h2 class="text-center" style="color: white;">Photo Gallery</h2>
+                <p class="text-center" style="color: white; margin-bottom: 40px;">Highlights from my work and engagements</p>
+                
+                <div id="galleryContainer" class="gallery-container">
+                    <!-- React will render gallery items here -->
+                    <div class="loading-indicator">
+                        <i class="fas fa-spinner fa-spin"></i>
+                        <span>Loading gallery...</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+    
+        <!-- Blog Section -->
+        <section id="blog" class="blog-section">
+            <div class="container">
+                <h2 class="text-center mb-4">Featured Publications</h2>
+                
+                <div class="blog-container">
+                    <!-- Featured Article -->
+                    <article class="featured-article animate-on-scroll" data-animation="animate-fade-in">
+                        <div class="article-header">
+                            <h2>Generation Democracy: A Youth Leadership Journey</h2>
+                            <div class="article-meta">
+                                <span><i class="far fa-calendar-alt"></i> August 10, 2022</span>
+                                <span><i class="far fa-newspaper"></i> Nepal Live Today</span>
+                                <span><i class="far fa-clock"></i> 8 min read</span>
+                            </div>
+                        </div>
+    
+                        <div class="article-content">
+                            <p class="pull-quote">
+                                "Youth leadership is not about waiting for opportunities, 
+                                but creating them through persistent engagement and dialogue."
+                            </p>
+    
+                            <p>In an exclusive interview with Nepal Live Today, Jagdish Ayer shares his vision for youth empowerment and democratic engagement in Nepal. The interview explores his journey as a youth leader and his contributions to strengthening civil society.</p>
+    
+                            <h3>Key Initiatives</h3>
+                            <ul>
+                                <li>Youth Political Literacy Programs</li>
+                                <li>Intergenerational Policy Dialogues</li>
+                                <li>Digital Democracy Workshops</li>
+                            </ul>
+    
+                            <a href="https://www.nepallivetoday.com/2022/08/10/generation-democracy-meet-a-nepali-youth-who-is-working-for-advancing-youth-leadership/" 
+                               target="_blank" 
+                               rel="noopener noreferrer"
+                               class="cta-button">
+                                Read Full Interview
+                            </a>
+                        </div>
+                    </article>
+    
+                    <!-- Personal Journey -->
+                    <article class="author-highlight animate-on-scroll" data-animation="animate-fade-in" data-delay="delay-200">
+                        <img src="assets/images/f26-photo.jpg" 
+                             alt="Jagdish Ayer Profile" 
+                             class="author-image" width="200" height="200">
+                        <div>
+                            <h3>From Community Organizer to Democratic Advocate</h3>
+                            <p>As featured in the Community of Democracies, this profile highlights Jagdish's journey from grassroots activism to international advocacy.</p>
+                            <blockquote>
+                                "My work focuses on bridging the gap between traditional political structures 
+                                and the digital-native generation."
+                            </blockquote>
+                            <a href="https://community-democracies.org/codyouthleads-jagdishs-story/" 
+                               target="_blank" 
+                               rel="noopener noreferrer"
+                               class="cta-button">
+                                Read Full Story
+                            </a>
+                        </div>
+                    </article>
+    
+                    <!-- Latest Articles -->
+                    <div class="article-grid animate-on-scroll" data-animation="animate-fade-in" data-delay="delay-300">
+                        <h2>Recent Publications</h2>
+                        <div class="article-card">
+                            <h4>The Future of Nepali Democracy</h4>
+                            <p>Analysis of current political trends and the role of youth in shaping Nepal's democratic future.</p>
+                            <a href="#" target="_blank" class="read-more">Read →</a>
+                        </div>
+                        <div class="article-card">
+                            <h4>Digital Citizenship in South Asia</h4>
+                            <p>Exploring how technology is transforming civic engagement across the region.</p>
+                            <a href="#" target="_blank" class="read-more">Read →</a>
+                        </div>
+                        <div class="article-card">
+                            <h4>Youth-Led Climate Initiatives</h4>
+                            <p>Documenting successful environmental campaigns led by young activists in Nepal.</p>
+                            <a href="#" target="_blank" class="read-more">Read →</a>
+                        </div>
+                    </div>
+    
+                    <!-- Social Media Integration -->
+                    <div class="social-embed animate-on-scroll" data-animation="animate-fade-in" data-delay="delay-400">
+                        <h3>Latest Updates</h3>
+                        <div class="facebook-feed">
+                            <p>Stay connected with my latest activities, events, and publications by following me on social media.</p>
+                            <div class="social-buttons">
+                                <a href="https://www.facebook.com/kumar.jagdish.5" 
+                                   target="_blank" 
+                                   rel="noopener noreferrer"
+                                   class="btn">
+                                    <i class="fab fa-facebook"></i> Follow on Facebook
+                                </a>
+                                <a href="#" 
+                                   target="_blank" 
+                                   rel="noopener noreferrer"
+                                   class="btn btn-secondary">
+                                    <i class="fab fa-twitter"></i> Follow on Twitter
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Contact Section -->
+        <section id="contact" class="contact-section">
+            <div class="container">
+                <h2 class="text-center" style="color: white;">Connect With Me</h2>
+                
+                <div class="contact-container">
+                    <!-- Contact Form - Will be replaced by React -->
+                    <div class="contact-card animate-on-scroll" data-animation="animate-fade-in">
+                        <h2>Get in Touch</h2>
+                        <form class="contact-form">
+                            <input type="text" placeholder="Name" required>
+                            <input type="email" placeholder="Email" required>
+                            <textarea rows="5" placeholder="Message" required></textarea>
+                            <button type="submit" class="cta-button">Send Message</button>
+                        </form>
+    
+                        <!-- Social Links with Labels -->
+                        <div class="social-links">
+                            <a href="https://www.facebook.com/kumar.jagdish.5" target="_blank" rel="noopener noreferrer" class="social-item">
+                                <i class="fab fa-facebook social-icon"></i>
+                                <span class="social-label">Facebook</span>
+                            </a>
+                            <a href="#" target="_blank" rel="noopener noreferrer" class="social-item">
+                                <i class="fab fa-instagram social-icon"></i>
+                                <span class="social-label">Instagram</span>
+                            </a>
+                            <a href="#" target="_blank" rel="noopener noreferrer" class="social-item">
+                                <i class="fab fa-twitter social-icon"></i>
+                                <span class="social-label">Twitter</span>
+                            </a>
+                            <a href="#" target="_blank" rel="noopener noreferrer" class="social-item">
+                                <i class="fab fa-linkedin social-icon"></i>
+                                <span class="social-label">LinkedIn</span>
+                            </a>
+                        </div>
+                    </div>
+    
+                    <!-- Featured Content -->
+                    <div class="contact-card animate-on-scroll" data-animation="animate-fade-in" data-delay="delay-200">
+                        <h2>Featured Content</h2>
+                        <div class="publications-grid">
+                            <div class="publication-card">
+                                <h4>Generation Democracy Interview</h4>
+                                <p>Nepal Live Today - Aug 2022</p>
+                                <a href="https://www.nepallivetoday.com/2022/08/10/generation-democracy-meet-a-nepali-youth-who-is-working-for-advancing-youth-leadership/" target="_blank" rel="noopener noreferrer" class="cta-button">Read</a>
+                            </div>
+                            <div class="publication-card">
+                                <h4>Youth Leadership Story</h4>
+                                <p>Community of Democracies</p>
+                                <a href="https://community-democracies.org/codyouthleads-jagdishs-story/" target="_blank" rel="noopener noreferrer" class="cta-button">Read</a>
+                            </div>
+                        </div>
+    
+                        <div class="email-section">
+                            <h3>Direct Contact</h3>
+                            <a href="mailto:info@jagdishkumarayer.com.np" class="email-link">
+                                <i class="fas fa-envelope"></i>
+                                info@jagdishkumarayer.com.np
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <h3>Jagdish Ayer</h3>
+                    <p>Youth Leader & Activist</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
                     <ul>
-                        <li>Youth Political Literacy Programs</li>
-                        <li>Intergenerational Policy Dialogues</li>
-                        <li>Digital Democracy Workshops</li>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#gallery">Gallery</a></li>
+                        <li><a href="#blog">Blog</a></li>
+                        <li><a href="#contact">Contact</a></li>
                     </ul>
-
-                    <a href="https://www.nepallivetoday.com/2022/08/10/generation-democracy-meet-a-nepali-youth-who-is-working-for-advancing-youth-leadership/" 
-                       target="_blank" 
-                       rel="noopener noreferrer"
-                       class="cta-button">
-                        Read Full Interview
-                    </a>
                 </div>
-            </article>
-
-            <!-- Personal Journey -->
-            <article class="author-highlight">
-                <img src="assets/images/f26-photo.jpg" 
-                     alt="Jagdish Ayer Profile" 
-                     class="author-image" width="200px" height="200px">
-                <div>
-                    <h3>From Community Organizer to Democratic Advocate</h3>
-                    <p>As featured in the Community of Democracies...</p>
-                    <blockquote>
-                        "My work focuses on bridging the gap between traditional political structures 
-                        and the digital-native generation."
-                    </blockquote>
-                    <a href="https://community-democracies.org/codyouthleads-jagdishs-story/" 
-                       target="_blank" 
-                       rel="noopener noreferrer"
-                       class="cta-button">
-                        Read Full Story
-                    </a>
-                </div>
-            </article>
-
-            <!-- Latest Articles -->
-            <div class="article-grid">
-                <h2>Recent Publications</h2>
-                <div class="article-card">
-                    <h4>The Future of Nepali Democracy</h4>
-                    <p>Analysis of current political trends...</p>
-                    <a href="#" target="_blank" class="read-more">Read →</a>
-                </div>
-                <!-- Repeat for other articles -->
-            </div>
-
-            <!-- Social Media Integration -->
-            <div class="social-embed">
-                <h3>Latest Updates</h3>
-                <div class="facebook-feed">
-                    <!-- Add Facebook embed code here -->
-                    <a href="https://www.facebook.com/kumar.jagdish.5" 
-                       target="_blank" 
-                       rel="noopener noreferrer"
-                       class="cta-button">
-                        Follow on Facebook
-                    </a>
+                <div class="footer-contact">
+                    <h4>Contact</h4>
+                    <p><i class="fas fa-envelope"></i> info@jagdishkumarayer.com.np</p>
+                    <p><i class="fas fa-map-marker-alt"></i> Kathmandu, Nepal</p>
                 </div>
             </div>
-
-            <!-- Newsletter Signup -->
-
-        </div>
-    </section>
-    
-    <section id="contact" class="contact-section">
-        <div class="contact-container">
-            <!-- Contact Form -->
-            <div class="contact-card">
-                <h2>Get in Touch</h2>
-                <form class="contact-form">
-                    <input type="text" placeholder="Name" required>
-                    <input type="email" placeholder="Email" required>
-                    <textarea rows="5" placeholder="Message" required></textarea>
-                    <button type="submit" class="cta-button">Send Message</button>
-                </form>
-
-                <!-- Updated Social Links with Labels -->
-<div class="social-links">
-    <a href="https://www.facebook.com/kumar.jagdish.5" target="_blank" class="social-item">
-        <i class="fab fa-facebook social-icon"></i>
-        <span class="social-label">Facebook</span>
-    </a>
-    <a href="[Instagram-URL]" target="_blank" class="social-item">
-        <i class="fab fa-instagram social-icon"></i>
-        <span class="social-label">Instagram</span>
-    </a>
-    <a href="[Twitter-URL]" target="_blank" class="social-item">
-        <i class="fab fa-twitter social-icon"></i>
-        <span class="social-label">Twitter</span>
-    </a>
-    <a href="[LinkedIn-URL]" target="_blank" class="social-item">
-        <i class="fab fa-linkedin social-icon"></i>
-        <span class="social-label">LinkedIn</span>
-    </a>
-</div>
-            </div>
-
-            <!-- Featured Content -->
-            <div class="contact-card">
-                <h2>Featured Content</h2>
-                <div class="publications-grid">
-                    <div class="publication-card">
-                        <h4>Generation Democracy Interview</h4>
-                        <p>Nepal Live Today - Aug 2022</p>
-                        <a href="#" class="cta-button">Read</a>
-                    </div>
-                    <div class="publication-card">
-                        <h4>Youth Leadership Story</h4>
-                        <p>Community of Democracies</p>
-                        <a href="#" class="cta-button">Read</a>
-                    </div>
-                </div>
-
-                <div class="email-section">
-                    <h3>Direct Contact</h3>
-                    <a href="mailto:info@jagdishkumar.com.np" class="email-link">
-                        <i class="fas fa-envelope"></i>
-                        info@jagdishkumarayer.com.np
-                    </a>
-                </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Jagdish Ayer. All rights reserved.</p>
             </div>
         </div>
-    </section>
-    
-  
+    </footer>
 
+    <!-- Back to top button -->
+    <button id="backToTop" class="back-to-top" aria-label="Back to top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
 
     <!-- JavaScript Files -->
-    <script src="assets/js/navbar.js" defer></script>
-    <script src="assets/js/main.js" defer></script>
-    <script src="assets/js/sections/home.js" defer></script>
-    <script src="assets/js/sections/gallery.js" defer></script>
-    <script src="assets/js/sections/blog.js" defer></script>
-    <script src="assets/js/sections/contact.js" defer></script>
-
-    <!-- No-Jekyll File -->
-    <script>
-        // Create .nojekyll file for GitHub Pages
-        if(window.location.hostname === 'github.io') {
-            const noJekyll = document.createElement('div');
-            noJekyll.style.display = 'none';
-            noJekyll.className = 'nojekyll';
-            document.body.appendChild(noJekyll);
-        }
+    <!-- Load our consolidated app.js file -->
+    <script src="assets/js/app.js" defer></script>
+    
+    <!-- Structured Data for SEO -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Jagdish Ayer",
+        "url": "https://jagdishkumarayer.com.np",
+        "image": "https://jagdishkumarayer.com.np/assets/images/Jagadish.jpg",
+        "sameAs": [
+            "https://www.facebook.com/kumar.jagdish.5"
+        ],
+        "jobTitle": "Youth Leader and Activist",
+        "worksFor": {
+            "@type": "Organization",
+            "name": "Youth Advocacy Nepal"
+        },
+        "description": "A passionate youth leader and activist dedicated to empowering young people to create positive change in their communities."
+    }
     </script>
 </body>
-</html> 
+</html>
